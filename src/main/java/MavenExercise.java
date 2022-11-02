@@ -1,7 +1,5 @@
+import org.apache.commons.lang3.StringUtils;
 import java.util.Scanner;
-
-import static org.apache.commons.lang3.StringUtils.reverse;
-import static org.apache.commons.lang3.StringUtils.swapCase;
 import static org.apache.commons.lang3.math.NumberUtils.isNumber;
 
 public class MavenExercise {
@@ -16,9 +14,9 @@ public class MavenExercise {
            System.out.println("This is not a number!");
        }
         System.out.println("Your input reversed is: ");
-        System.out.println(reverse(userInput));
+        System.out.println(StringUtils.reverse(userInput));
         System.out.println("Your input with flipped case is: ");
-        System.out.println(swapCase(userInput));
+        System.out.println(StringUtils.swapCase(userInput));
 
 
     }
